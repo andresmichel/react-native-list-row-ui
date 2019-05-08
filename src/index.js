@@ -11,6 +11,7 @@ export default class ListRow extends React.Component {
     const { color, labelColor } = this.props
     return (
       <View style={styles.container}>
+        {this.props.LeftComponent}
         <View style={styles.infoContainer}>
           <View style={styles.headerContainer}>
             <Text numberOfLines={1} style={[styles.title, { color }]}>{this.props.title}</Text>
@@ -30,6 +31,7 @@ ListRow.propTypes = {
   label: PropTypes.string.isRequired,
   color: PropTypes.string,
   labelColor: PropTypes.string,
+  LeftComponent: PropTypes.element,
 }
 
 ListRow.defaultProps = {
