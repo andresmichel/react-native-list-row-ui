@@ -27,7 +27,7 @@ export default class ListRow extends React.Component {
 ListRow.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
+  label: PropTypes.string,
   color: PropTypes.string,
   labelColor: PropTypes.string,
   LeftComponent: PropTypes.element,
